@@ -10,7 +10,7 @@ Simple code example below:
 package main
 
 import (
-    l2n "sonaesr.com/log2nsq"
+    l2n "github.com/crazyfacka/log2nsq"
 )
 
 func main() {
@@ -31,7 +31,7 @@ func main() {
 PACKAGE DOCUMENTATION
 
 package log2nsq
-    import "sonaesr.com/log2nsq"
+    import "github.com/crazyfacka/log2nsq"
 
 
 FUNCTIONS
