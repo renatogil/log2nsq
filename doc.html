@@ -1,0 +1,276 @@
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script type='text/javascript'>
+	document.ANALYSIS_DATA = ;
+	document.CALLGRAPH = ;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "sonaesr.com/log2nsq"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="#Errorf">func Errorf(line string, params ...interface{})</a></dd>
+			
+				
+				<dd><a href="#Printf">func Printf(line string, params ...interface{})</a></dd>
+			
+				
+				<dd><a href="#Println">func Println(line string)</a></dd>
+			
+				
+				<dd><a href="#Tracef">func Tracef(line string, params ...interface{})</a></dd>
+			
+			
+				
+				<dd><a href="#Log2Nsq">type Log2Nsq</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NewLog2Nsq">func NewLog2Nsq(opts *Options) *Log2Nsq</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Log2Nsq.Close">func (l2n *Log2Nsq) Close()</a></dd>
+				
+			
+				
+				<dd><a href="#Options">type Options</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/sonaesr.com/log2nsq/main.go">main.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		<div id="pkg-callgraph" class="toggle" style="display: none">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Internal Call Graph section">Internal call graph ▹</h2>
+		</div> <!-- .expanded -->
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Internal Call Graph section">Internal call graph ▾</h2>
+			<p>
+			  In the call graph viewer below, each node
+			  is a function belonging to this package
+			  and its children are the functions it
+			  calls&mdash;perhaps dynamically.
+			</p>
+			<p>
+			  The root nodes are the entry points of the
+			  package: functions that may be called from
+			  outside the package.
+			  There may be non-exported or anonymous
+			  functions among them if they are called
+			  dynamically from another package.
+			</p>
+			<p>
+			  Click a node to visit that function's source code.
+			  From there you can visit its callers by
+			  clicking its declaring <code>func</code>
+			  token.
+			</p>
+			<p>
+			  Functions may be omitted if they were
+			  determined to be unreachable in the
+			  particular programs or tests that were
+			  analyzed.
+			</p>
+			<!-- Zero means show all package entry points. -->
+			<ul style="margin-left: 0.5in" id="callgraph-0" class="treeview"></ul>
+		</div>
+		</div> <!-- #pkg-callgraph -->
+
+		
+		
+		
+			
+			
+			<h2 id="Errorf">func <a href="/src/target/main.go?s=4638:4685#L204">Errorf</a></h2>
+			<pre>func Errorf(line <a href="/pkg/builtin/#string">string</a>, params ...interface{})</pre>
+			<p>
+Errorf outputs data with the grade &#39;error&#39;.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Printf">func <a href="/src/target/main.go?s=4354:4401#L194">Printf</a></h2>
+			<pre>func Printf(line <a href="/pkg/builtin/#string">string</a>, params ...interface{})</pre>
+			<p>
+Printf outputs data with the grade &#39;normal&#39;.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Println">func <a href="/src/target/main.go?s=4525:4550#L199">Println</a></h2>
+			<pre>func Println(line <a href="/pkg/builtin/#string">string</a>)</pre>
+			<p>
+Println is the same as Printf, but without receiving any extra arguments.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Tracef">func <a href="/src/target/main.go?s=4212:4259#L189">Tracef</a></h2>
+			<pre>func Tracef(line <a href="/pkg/builtin/#string">string</a>, params ...interface{})</pre>
+			<p>
+Tracef outputs data with the grade &#39;debug&#39;.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Log2Nsq">type <a href="/src/target/main.go?s=478:553#L20">Log2Nsq</a></h2>
+			<pre>type Log2Nsq struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+Log2Nsq main struc, representing the logger.
+</p>
+
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewLog2Nsq">func <a href="/src/target/main.go?s=4840:4879#L209">NewLog2Nsq</a></h3>
+				<pre>func NewLog2Nsq(opts *<a href="#Options">Options</a>) *<a href="#Log2Nsq">Log2Nsq</a></pre>
+				<p>
+NewLog2Nsq creates a new instance of the logger. It is a mandatory step before starting to log any data.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Log2Nsq.Close">func (*Log2Nsq) <a href="/src/target/main.go?s=1403:1430#L58">Close</a></h3>
+				<pre>func (l2n *<a href="#Log2Nsq">Log2Nsq</a>) Close()</pre>
+				<p>
+Close closes all NSQ related comms. Defer it to the end of your application.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Options">type <a href="/src/target/main.go?s=187:428#L6">Options</a></h2>
+			<pre>type Options struct {
+    <span class="comment">// Application name</span>
+    AppName <a href="/pkg/builtin/#string">string</a>
+
+    <span class="comment">/* NSQ Address
+     * If ommited, a default one will be used
+     */</span>
+    Addr <a href="/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Additional tags to be included in the final JSON message sent to NSQ</span>
+    ExtraTags map[<a href="/pkg/builtin/#string">string</a>]<a href="/pkg/builtin/#string">string</a>
+}</pre>
+			<p>
+Options for the Log2Nsq constructor.
+</p>
+
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
