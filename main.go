@@ -8,8 +8,8 @@ import (
 	"net"
 	"time"
 
-	"code.google.com/p/go-uuid/uuid"
 	"github.com/bitly/go-nsq"
+	"github.com/pborman/uuid"
 )
 
 // Options for the Log2Nsq constructor.
@@ -46,7 +46,7 @@ func (l2n *Log2Nsq) buildFinalJSON(line string) map[string]map[string]string {
 		json[k] = v
 	}
 
-	json["uuid"] = uuid.NewUUID().String()
+	json["uuid"] = uuid.New()
 	json["msg"] = line
 	json["timestamp"] = time.Now().Format(time.RFC3339)
 
